@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>user page</title>
+</head>
+<!--<style>-->
+<!--body{-->
+<!--background-image:url("static/twitter.jpg ");-->
+<!--}-->
+<!--</style>-->
+
+<style>
+body {
+
+
+
+  <!--background-image: url("static/1.png");-->
+  <!--background-color: #cccccc;-->
+  height: 300px;
+  <!--width: 100%;-->
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+</style>
+
+
+
+
+<body>
+
+
+<center></center><h1> Student Registration Form</h1></center>
+<!--<div class="container">-->
+<!--<center>  <img src="static/twitter.jpg" height="300px" width="100%"></center></div>-->
+
+
+<table border=" 2" cellpadding="10" align="center">
+    <tr>
+        <th>Email</th>
+    </tr>
+    {% for user in m %}
+    <tr>
+        <td> {{user[0]}}</td>
+
+    </tr>
+    {% endfor %}
+</table>
+</body>
+
+</html>
